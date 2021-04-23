@@ -2,7 +2,7 @@
 
 This repository is the official implementation of Training Classifiers that are Universally Robust to All Label Noise Levels.
 
-To train neural networks that are universal robust to all noise levels, and are not sensitive to any variation in the noise model, we propose a distillation-based framework that incorporates a new subcategory of Positive-Unlabeled learning. In particular, we shall assume that a small subset of any given noisy dataset is known to have correct labels, which we treat as “positive”, while the remaining noisy subset is treated as “unlabeled”. Our framework consists of the following 3 steps: (1) We shall generate, via iterative updates, an augmented clean subset with additional reliable “positive” samples filtered from “unlabeled” samples; (2) We shall train a teacher model on this larger augmented clean set; (3) With the guidance of the teacher model, we then train a student model on the whole dataset.
+To train classifiers that are universally robust to all noise levels, and that are not sensitive to any variation in the noise model, we propose a distillation-based framework that incorporates a new subcategory of Positive-Unlabeled learning. In particular, we shall assume that a small subset of any given noisy dataset is known to have correct labels, which we treat as “positive”, while the remaining noisy subset is treated as “unlabeled”. Our framework consists of the following 3 steps: (1) We shall generate, via iterative updates, an augmented clean subset with additional reliable “positive” samples filtered from “unlabeled” samples; (2) We shall train a teacher model on this larger augmented clean set; (3) With the guidance of the teacher model, we then train a student model on the whole dataset.
 
 ![](flow.png)
 
