@@ -1,10 +1,10 @@
 # PUDistill
 
-PyTorch code for the following paper:
+PyTorch code for the following IJCNN 2021 paper:
 
 **Title**: Training Classifiers that are Universally Robust to All Label Noise Levels.
 
-**Authors**: Jingyi Xu, Tony Q. S. Quek and Kai Fong Ernest
+**Authors**: Jingyi Xu, Tony Q. S. Quek, and Kai Fong Ernest Chong
 
 
 
@@ -64,6 +64,7 @@ python generate_clean_set_cifar.py --clean_data_ratio 0.1 --threshold 0.9 --add_
 python teacher_cifar.py --n 5 --mixup --entropy_reg
 python student_cifar.py  --noise_type syn --noise_level 0.7 --label_type soft_bootstrap --student_lambda 0.8
 ```
+(Use --noise_type asyn for asymmetric noise.)
 
 - ##### Clothing1M:
 
