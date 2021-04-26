@@ -77,21 +77,24 @@ python student_clothing.py --label_type soft_bootstrap --student_lambda 0.8
 
 ## Results
 
-#### Accuracies on CIFAR10 with symmetric synthetic noise (average of 5 trials)
+To ensure reproducibility, we have repeated our experiments for CIFAR10, and we report below the accuracies obtained for both symmetric and asymmetric semantic noise. The values reported here may be higher than the values reported in the paper. For our experiments on Clothing1M, we report the accuracy given in the paper.
+
+#### Accuracies on CIFAR10 with synthetic symmetric noise (average of 5 trials)
 
 | Algorithm\Noise Level | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   |
 | --------------------- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| SOTA                  | 95.95 | 94.66 | 94.85 | 94.89 | 94.14 | 93.21 | 61.62 |
-| Our Method            | 90.67 | 89.46 | 88.39 | 87.34 | 86.31 | 85.92 | 85.73 |
+| SOTA                  | **95.95** | **94.66** | **94.85** | **94.89** | **94.14** | **93.21** | 61.62 |
+| Our Method            | 90.67 | 89.46 | 88.39 | 87.34 | 86.31 | 85.92 | **85.73** |
 
 
 
-#### Accuracies on CIFAR10 with asymmetric synthetic noise (average of 5 trials)
+#### Accuracies on CIFAR10 with synthetic asymmetric semantic noise (average of 5 trials)
 
 | Algorithm\Noise Level | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   |
 | --------------------- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| SOTA                  | 93.95 | 89.56 | 84.56 | 78.21 | 76.70 | 76.44 | 76.00 |
-| Our Method            | 90.76 | 89.63 | 88.56 | 87.53 | 86.80 | 86.32 | 85.97 |
+| SOTA                  | **93.95** | 89.56 | 84.56 | 78.21 | 76.70 | 76.44 | 76.00 |
+| Our Method            | 90.76 | **89.63** | **88.56** | **87.53** | **86.80** | **86.32** | **85.97** |
+
 
 
 
@@ -100,5 +103,5 @@ python student_clothing.py --label_type soft_bootstrap --student_lambda 0.8
 | Algorithm  | Accuracy |
 | ---------- | -------- |
 | SOTA       | 74.76    |
-| Our Method | 77.70    |
+| Our Method | **77.70**    |
 
